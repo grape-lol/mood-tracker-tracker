@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Data Display</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Data Display</h1>
+    <input type="file" id="fileInput" accept=".json">
+    <div id="user-data" style="display: none;">
+      <h2>User Info</h2>
+      <p><strong>Username:</strong> <span id="username"></span></p>
+      <p><strong>Account Created:</strong> <span id="created-at"></span></p>
+      <p><strong>Total Mood Changes:</strong> <span id="total-mood-changes"></span></p>
+      
+      <h2>Settings</h2>
+      <p><strong>Profile Private:</strong> <span id="profile-private"></span></p>
+      <p><strong>History Private:</strong> <span id="history-private"></span></p>
+      
+      <h3>Custom Labels:</h3>
+      <ul id="custom-labels"></ul>
+      
+      <h3>Custom Colors:</h3>
+      <ul id="custom-colors"></ul>
+      
+      <h2>History</h2>
+      <table id="history-table">
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>Pleasantness</th>
+            <th>Energy</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
